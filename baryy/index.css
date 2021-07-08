@@ -1,0 +1,33 @@
+body{
+	background-image: linear-gradient(#99FFFF,#006666);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.btn1{
+clip-path: polygon(0% 19%, 74% 20%, 100% 50%, 74% 73%, 0% 74%);	
+position: absolute;
+box-shadow: -8px -20px;
+border : 5px solid red;
+background-color:white ;
+width: 160px;
+height: 100px;
+margin-left: 1100px;
+margin-top: 150px;
+}
+
+.btngo{
+	text-decoration: none;
+	position: relative;	
+}
+.btngo a{
+	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-right: 120px;
+
+}
+.go{
+position: relative;
+margin-left: 40px;
+margin-top: 4px;
+}

@@ -1,0 +1,104 @@
+body {
+  /* padding: 2em;
+  margin: 2em;
+  box-sizing: border-box; */
+  padding-bottom: 2em;
+}
+body#home {
+  background-image: linear-gradient(#99ffff, #006666);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+.h4 {
+  flex-direction: row;
+}
+.go {
+  flex-direction: row;
+}
+.go .button {
+  box-shadow: 1px 1px 5px #000;
+  border: none;
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0% 19%, 74% 20%, 100% 50%, 74% 73%, 0% 74%);
+  height: 4em;
+  padding-right: 1.6em;
+  padding-bottom: 0.9em;
+  width: 4em;
+}
+
+.row-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+}
+.row-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 40vw;
+  /* @media(min-width: 520px) {
+    width: vw;
+  } */
+}
+.col {
+  flex-direction: column;
+}
+
+table {
+  border: 7px solid rgb(119, 119, 119);
+  border-radius: 4px;
+  border-collapse: collapse;
+  margin-top: 2em;
+  margin-left: 0.4em;
+  margin-bottom: 1em;
+}
+th,
+td {
+  padding: 15px;
+}
+/*tr {*/
+/*  background-color: rgb(250, 188, 73);*/
+/*}*/
+.button {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: greenyellow;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.action {
+  margin-top: 1em;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.tambah {
+  margin-right: 7px;
+}
+.lanjut {
+  margin-top: 1em;
+}
+input {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  margin-left: 4px;
+}
+
+.total_pembayaran {
+  background-color: rgba(250, 188, 73, 0.4);
+  padding: 2px 4px;
+  margin-left: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px black;
+}

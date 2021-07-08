@@ -1,0 +1,39 @@
+body
+{
+    font-family:sans-serif;
+}
+ 
+table
+{
+    border-collapse: collapse;
+    width: 35%;
+    position: relative;
+   \
+    
+}
+ 
+table, th, td
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
+tr:hover
+{
+    background-color: lightblue;
+}
+
+th
+{
+    background-color: dodgerblue;
+    color: white;
+}
+ 
+tr:nth-child(odd)
+{
+    background-color: Lavender;
+}
+
+tr:nth-child(odd):hover
+{
+    background-color: lightblue;
+}
