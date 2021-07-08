@@ -2,6 +2,7 @@
 include 'function.php';
 $id = $_GET['id'];
 $pesanan = query("SELECT * FROM pesanan WHERE is_dibayar = 1 AND pembayaran_id = '{$id}'");
+$pembayaran = query("SELECT * FROM pembayaran WHERE id = '{$id}'")[0];
 $query = mysqli_query($db, "SELECT SUM(total_harga) AS total_harga FROM pesanan");
 $total_pembayaran = mysqli_fetch_assoc($query);
 
@@ -50,6 +51,14 @@ $total_pembayaran = mysqli_fetch_assoc($query);
           <?= $total_pembayaran['total_harga'] ?></span>
       </span>
     </span>
+    <div class="row-end" style="margin-top: 1em;">
+      Bayar: Rp.
+      <?= $pembayaran['bayar'] ?>
+    </div>
+    <div class="row-end" style="margin-top: 1em;">
+      Kembalian: Rp.
+      <?= $pembayaran['uang_kembali'] ?>
+    </div>
   </div>
 
 </body>

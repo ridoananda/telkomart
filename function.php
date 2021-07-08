@@ -44,7 +44,7 @@ function ubah_pesanan($data, $id)
 {
   global $db;
   // var_dump($data);
-  $query = "UPDATE pesanan SET barang_id = '{$data['barang_id']}',jumlah_barang = '{$data['jumlah_barang']}', total_harga = '{$data['total_harga']}', '0', '0' WHERE id = '{$id}'";
+  $query = "UPDATE pesanan SET barang_id = '{$data['barang_id']}',jumlah_barang = '{$data['jumlah_barang']}', total_harga = '{$data['total_harga']}' WHERE id = '{$id}'";
   return mysqli_query($db, $query);
 }
 

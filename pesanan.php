@@ -59,7 +59,7 @@ $total_pembayaran = mysqli_fetch_assoc($query);
       </span>
     </span>
     <div class="row-end action">
-      <a href="add_pesanan.php">
+      <a href="index.php">
         <button class="button">kembali</button>
       </a>
       <a href="add_pesanan.php" class="tambah">
