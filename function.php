@@ -76,3 +76,11 @@ function add_pembayaran($data)
   $query = "INSERT INTO pembayaran VALUES('', '{$data['total_harga']}', '{$data['bayar']}', '{$uang_kembali}')";
   return mysqli_query($db, $query);
 }
+
+function add_pegawai($data)
+{
+  global $db;
+  $query = "INSERT INTO pegawai VALUES('', '{$data['nama_pegawai']}')";
+  mysqli_query($db, $query);
+  return mysqli_affected_rows($db);
+}

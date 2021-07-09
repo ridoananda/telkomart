@@ -74,6 +74,11 @@ $total_pembayaran = mysqli_fetch_assoc($query);
         </a>
       </form>
     </div>
+    <div class="row-end action">
+      <a href="add_pegawai.php" class="tambah">
+        <button class="button">Tambah Pegawai</button>
+      </a>
+    </div>
   </div>
 
   <script>

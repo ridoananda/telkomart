@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Jul 2021 pada 14.49
+-- Waktu pembuatan: 09 Jul 2021 pada 15.49
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.2
 
@@ -112,6 +112,24 @@ INSERT INTO `kasir` (`id`, `id_karyawan`, `nama_karyawan`, `username`, `password
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `pegawai`
+--
+
+CREATE TABLE `pegawai` (
+  `id` int(100) NOT NULL,
+  `nama_pegawai` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `pegawai`
+--
+
+INSERT INTO `pegawai` (`id`, `nama_pegawai`) VALUES
+(0, 'Rido');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `pembayaran`
 --
 
@@ -128,7 +146,8 @@ CREATE TABLE `pembayaran` (
 
 INSERT INTO `pembayaran` (`id`, `total_harga`, `bayar`, `uang_kembali`) VALUES
 (1, 240000, 250000, 10000),
-(2, 20000, 30000, 10000);
+(2, 20000, 30000, 10000),
+(3, 180000, 200000, 20000);
 
 -- --------------------------------------------------------
 
@@ -151,7 +170,9 @@ CREATE TABLE `pesanan` (
 
 INSERT INTO `pesanan` (`id`, `barang_id`, `jumlah_barang`, `total_harga`, `is_dibayar`, `pembayaran_id`) VALUES
 (1, 1, 12, 240000, 1, 1),
-(2, 1, 1, 20000, 1, 2);
+(2, 1, 1, 20000, 1, 2),
+(3, 2, 4, 120000, 1, 3),
+(4, 1, 3, 60000, 1, 3);
 
 --
 -- Indexes for dumped tables
@@ -225,13 +246,13 @@ ALTER TABLE `kasir`
 -- AUTO_INCREMENT untuk tabel `pembayaran`
 --
 ALTER TABLE `pembayaran`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
